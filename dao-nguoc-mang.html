@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    let h = [1, 2, 3, 4, 5,];
+    let first = 0
+    let last = h.length -1;
+
+    while (first < last) {
+        let b = h[first]
+        h[first] = h[last]
+        h[last] = b
+        first++
+        last--
+    } document.write(h)
+</script>
+</body>
+</html>
